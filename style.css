@@ -1,0 +1,18 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  font-family: 'Suez One', serif;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.allCards {
+  font-family: 'Marcellus', serif;
+  color: #ffffff;
+  display: grid;
+  justify-items: center;
+}
