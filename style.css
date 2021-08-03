@@ -7,16 +7,12 @@ h1 {
   font-size: 35px;
   color: #ffffff;
   text-align: center;
-  margin-top: 50px auto;
+  margin: 50px auto;
 }
 
-.card {
+.allCards {
   font-family: 'Marcellus', serif;
   color: #ffffff;
   display: grid;
   justify-items: center;
-}
-
-.name {
-  font-size: 25px;
 }

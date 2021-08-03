@@ -1,6 +1,8 @@
+<!-- WIREFRAME: https://balsamiq.cloud/s3isxla/p8k55mx/r2278 -->
+
 <?php
 
-// WIREFRAME: https://balsamiq.cloud/s3isxla/p8k55mx/r2278
+require 'functions.php';
 
 $db = new PDO('mysql:host=db; dbname=collectorsApp', 'root', 'password');
 
@@ -11,9 +13,9 @@ $query->execute();
 
 $allCards = $query->fetchAll();
 
- /*uncomment if you want to check the whole db array
+/*uncomment if you want to check the whole db array
 print_r($allCards);
- */
+*/
 
 ?>
 
@@ -36,14 +38,8 @@ print_r($allCards);
 <body>
     <h1>Gwent cards collection</h1>
 
-    <div class="card">
-    <?php
-        foreach ($allCards as $card) {
-            echo '<h2 class="name">' . $card['name'] . '</h2>';
-            echo '<img src="' . $card['image_link'] . '" alt="an image of the card">';
-            echo '<p>' . $card['description'] . '</p>';
-        }
-        ?>
+    <div class="allCards">
+        <?php echo displayCollection($allCards); ?>
     </div>
 </body>
 </html>
