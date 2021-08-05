@@ -1,0 +1,33 @@
+body {
+  background-color: #666666;
+}
+
+h1 {
+  font-family: 'Suez One', serif;
+  font-size: 35px;
+  color: #ffffff;
+  text-align: center;
+  margin: 50px auto;
+}
+
+h2 {
+  border-top: 1px solid #ffffff;
+  font-family: 'Suez One', serif;
+  font-size: 25px;
+  color: #ffffff;
+  text-align: center;
+  margin: 20px auto;
+  padding-top: 20px;
+}
+
+.allCards {
+  font-family: 'Marcellus', serif;
+  color: #ffffff;
+  display: grid;
+  justify-items: center;
+}
+
+.newCardForm {
+  display:flex;
+  flex-direction: row;
+}
