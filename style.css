@@ -11,6 +11,12 @@ h1 {
   margin: 50px auto;
 }
 
+h2 {
+  font-family: 'Suez One', serif;
+  padding-top: 20px;
+  border-top: 2px solid #FFFFFF;
+}
+
 .allCards {
   font-family: 'Marcellus', serif;
   color: #ffffff;
