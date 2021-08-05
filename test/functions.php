@@ -22,7 +22,7 @@ class Functions extends TestCase
         $this->assertEquals($expectedOutput, $actualOutput);
     }
 
-// use correct data type but a wrong value
+
     public function testFailureDisplayCollection()
     {
         $input = [['name' => 'Freddie']];

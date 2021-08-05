@@ -26,3 +26,8 @@ h2 {
   display: grid;
   justify-items: center;
 }
+
+.newCardForm {
+  display:flex;
+  flex-direction: row;
+}
