@@ -3,9 +3,6 @@ $db = new PDO('mysql:host=db; dbname=collectorsApp', 'root', 'password');
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
 if(isset($_POST['submit'])) {
-    if(!(filter_var($_POST['unitStrength'], FILTER_VALIDATE_INT) && filter_var($_POST['cardPrice'], FILTER_VALIDATE_INT))) {
-        echo 'Error! Please enter whole number(s) for Unit Strength and Price of the card.';
-    }
     $newCardName = $_POST['cardName'];
     $newImageUrl = $_POST['imageUrl'];
     $newUnitStrength = $_POST['unitStrength'];
@@ -23,5 +20,6 @@ if(isset($_POST['submit'])) {
     $addCardQuery->bindParam(':newCardTerritory', $newCardTerritory);
 
     $addCardQuery->execute();
+
     header('Location: index.php');
 }
