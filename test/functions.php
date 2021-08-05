@@ -10,8 +10,7 @@ class Functions extends TestCase
     {
         $input = [['name' => 'Dandelion', 'image_link' => 'images/Dandelion-gwent-card.jpg', 'unit_strength' => 2, 'type' => 'Morale', 'price' => 20, 'territory' => 'Gustfields']];
 
-        $expectedOutput = '<span>________________________________________</span>' .
-        '<h2>Dandelion</h2>' .
+        $expectedOutput = '<h2>Dandelion</h2>' .
         '<img src="images/Dandelion-gwent-card.jpg" alt="an image of the card">' .
         '<p>Unit Strength: 2</p>' .
         '<p>Type: Morale</p>' .
@@ -23,11 +22,11 @@ class Functions extends TestCase
         $this->assertEquals($expectedOutput, $actualOutput);
     }
 
-
+// use correct data type but a wrong value
     public function testFailureDisplayCollection()
     {
-        $input = [['name' => 3.14, 'image_link' => 3.14, 'unit_strength' => 'PIE', 'type' => 3.14, 'price' => 'PIE', 'territory' => 3.14]];
-        $expectedOutput = 'PIE IN YOUR FACE';
+        $input = [['name' => 'Freddie']];
+        $expectedOutput = 'Invalid data. Please enter correct information.';
         $actualOutput = displayCollection($input);
         $this->assertEquals($expectedOutput, $actualOutput);
     }
