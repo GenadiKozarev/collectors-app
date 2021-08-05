@@ -29,19 +29,21 @@ $allCards = $query->fetchAll();
 
 <body>
     <h1>Gwent cards collection</h1>
-    <h2>add a new card to your collection</h2>
     <div class="allCards">
         <?php echo displayCollection($allCards); ?>
     </div>
-    <div class="newCardForm">
+    <div class="formStyle">
         <form action="formValidation.php" method="POST">
-            <input type="text" placeholder="Enter card name" name="cardName" required>
-            <input type="text" placeholder="Enter image URL" name="imageUrl" required>
-            <input type="text" placeholder="Enter unit strength" name="unitStrength" required>
-            <input type="text" placeholder="Enter type" name="cardType" required>
-            <input type="text" placeholder="Enter price" name="cardPrice" required>
-            <input type="text" placeholder="Enter territory" name="cardTerritory" required>
-            <input type="submit" name="submit" value="Add a new card">
+            <fieldset>
+                <legend>Add a new card to your collection</legend>
+                <input type="text" placeholder="Enter card name *" name="cardName" required>
+                <input type="text" placeholder="Enter image URL *" name="imageUrl" required>
+                <input type="text" placeholder="Enter unit strength *" name="unitStrength" required>
+                <input type="text" placeholder="Enter type *" name="cardType" required>
+                <input type="text" placeholder="Enter price *" name="cardPrice" required>
+                <input type="text" placeholder="Enter territory *" name="cardTerritory" required>
+                <input type="submit" name="submit" value="Do it!">
+            </fieldset>
         </form>
     </div>
 </body>

@@ -1,5 +1,6 @@
 body {
-  background-color: #666666;
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(210,166,51,1) 50%, rgba(0,0,0,1) 100%);
 }
 
 h1 {
@@ -11,13 +12,9 @@ h1 {
 }
 
 h2 {
-  border-top: 1px solid #ffffff;
   font-family: 'Suez One', serif;
-  font-size: 25px;
-  color: #ffffff;
-  text-align: center;
-  margin: 20px auto;
   padding-top: 20px;
+  border-top: 2px solid #FFFFFF;
 }
 
 .allCards {
@@ -27,7 +24,71 @@ h2 {
   justify-items: center;
 }
 
-.newCardForm {
-  display:flex;
-  flex-direction: row;
+.formStyle {
+  max-width: 500px;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+  font-family: 'Suez One', serif;
+}
+
+.formStyle fieldset {
+  border: none;
+}
+
+.formStyle legend {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #e8ab00;
+}
+
+.formStyle input[type="text"] {
+  font-family: 'Marcellus', serif;
+  background: rgba(255,255,255,.1);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background-color: #e8eeef;
+  color:#000000;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+.formStyle input[type="text"]:focus{
+  background: #d2d9dd;
+}
+
+.formStyle input[type="submit"],
+.formStyle input[type="button"]
+{
+  position: relative;
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  margin: 0 auto;
+  background: #e8ab00;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #e8ab00;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+.formStyle input[type="submit"]:hover,
+.formStyle input[type="button"]:hover {
+  background: #c99400;
 }
